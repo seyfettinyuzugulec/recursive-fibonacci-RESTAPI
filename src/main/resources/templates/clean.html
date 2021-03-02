@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body bgcolor="#009933">
+
+<form action="#" th:action="@{/api/fibonacci}" th:object="${operationModel}" method="get">
+
+    <center><p>
+        <h1>Fiboncci Serial Producer</h1>
+
+        <input type="text" th:field="*{fibNumber}"/>
+
+        <p>
+            <input type="submit" class="button" name="fibonacci" value="Submit"/>
+            <input type="submit" class="button" name="clear" value="Clear"/>
+        </p>
+        </p></center>
+</form>
+<center><p>
+    <p>Please write a number and click "Submit" button for producing fibonacci serial.</p>
+    </p></center>
+</body>
+</html>
